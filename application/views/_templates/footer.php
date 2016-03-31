@@ -10,6 +10,8 @@
     </script>
 
     <!-- our JavaScript -->
+
+    <script src="<?php echo URL; ?>public/js/security.js"></script>
     <script src="<?php echo URL; ?>public/js/application.js"></script>
 </body>
 </html>

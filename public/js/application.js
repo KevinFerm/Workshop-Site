@@ -1,8 +1,13 @@
+document.getElementById('submitform').onclick = function() {
+    pis("my-form").submit(["quantity","imgfile","textinput"]);
+}
+
 $(function() {
 
     // this is just a super-simple demo of JS
 
 	var demoHeaderBox;
+
 
     // simple demo to show create something via javascript on the page
     if ($('#javascript-header-demo-box').length !== 0) {
@@ -37,3 +42,13 @@ $(function() {
     }
 
 });
+function submit_by_id() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+
+    if(validation())// Calling validation function
+      {
+        document.getElementById("form_id").submit();//form submission
+        alert(" Name : "+name+" \n Email : "+email+" \n Form Id : "+document.getElementById("form_id").getAttribute("id")+"\n\n Form Submitted Successfully......");
+      }
+}

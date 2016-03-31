@@ -17,10 +17,12 @@
                         <td>Counter-Strike: Global Offensive</td>
                         <td>100kr</td>
                         <td><input type="text" name="quantity" class="form-control" value="1" form="my-form"></td>
+                        <td><input type='file' name="imgfile" form="my-form"></td>
+                        <td><input type='text' name="textinput" form="my-form" value="test"></td>
                     </tr>
                 </tbody>
         </table>
-        <input type="submit" name="submit" value="Submit" form="my-form">
+        <button id="submitform">Submit</button>
 
         <?php if(isset($price)) { ?>
         <h3>Bought for <?php echo $price;?></h3>
