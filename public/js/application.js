@@ -1,5 +1,5 @@
 document.getElementById('submitform').onclick = function() {
-    pis("my-form").submit(["quantity","imgfile","textinput"]);
+    pis("my-form").submit(["textarea","imgfile","textinput"]);
 }
 
 $(function() {

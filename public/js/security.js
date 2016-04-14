@@ -86,7 +86,13 @@ pis.prototype = {
    },
 
    phoneCheck: function(input) {
-    var pattern = /^([+]47)?((38[{8,9}|0])|(34[{7-9}|0])|(36[6|8|0])|(33[{3-9}|0])|(32[{8,9}]))([\d]{7})$/
+    var pattern = /^([+]47)?((38[{8,9}|0])|(34[{7-9}|0])|(36[6|8|0])|(33[{3-9}|0])|(32[{8,9}]))([\d]{7})$/;
+    return pattern.test(input);
+   },
+
+   coordCheck: function(input) {
+    var pattern = /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/;
+    return pattern.test(input);
    }
 };
 
